@@ -23,19 +23,18 @@ header {
         a {
             text-decoration: none;
             color: $couleur-secondaire;
-            -webkit-text-stroke: 0.5px;
-            -webkit-text-stroke-color: darken($couleur-secondaire, 20%);
         }
     }
 }
-/*menu page */
-.menus {
+
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 5%;
     margin: auto;
-    .menu {
+    
+    .carte-menu {
         width: 300px;
         height: 400px;
         position: relative;
@@ -44,7 +43,7 @@ header {
         box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
         a {
             text-decoration: none;
-            .informations {
+            .container-menu-contenu {
                 width: 300px;
                 height: 400px;
                 font-size: 115%;
@@ -67,7 +66,7 @@ header {
             }
         }
     }
-    .menu-la-note-enchantee {
+    .la-note-enchantee {
         background-color: darken(#fcdfdb, 1%);
         img {
             top: 32%;
@@ -86,7 +85,7 @@ header {
             color: #3c1218;
         }    
     }
-    .menu-le-chic-a-la-francaise {
+    .le-chic-a-la-francaise {
         background-color: darken(#fff5fe, 1%);
         h2 {
             top: 38%;
@@ -105,7 +104,7 @@ header {
             color: #c77412;
         }
     }
-    .menu-le-delice-des-papilles {
+    .le-delice-des-papilles {
         background-color: darken(#f9f9f9, 1%);
         h2 {
             top: 37%;
@@ -123,7 +122,7 @@ header {
             color: #0887fb;
         }
     }
-    .menu-la-palette-du-gout {
+    .la-palette-du-gout {
         background-color: darken(#fdfffd, 1%);
         h2 {
             top: 37%;
@@ -167,6 +166,7 @@ header {
         }
     }
 }
+
 @keyframes apparition {
     0% {
         opacity: 0;
@@ -203,173 +203,73 @@ footer {
     100%{transform: rotate(0deg)}
 }
 
-
-.title {
-    text-align: center;
-    font-family: Helvetica;
-    font-size: 155%;
+@media (min-width: 1100px) and (max-width: 1250px) {
+    .container {
+        width: 60%;
+    }
+    .prochainement {
+        margin-bottom: 10%;
+    }
 }
-/* les menus */
-.menu {
-    width: 650px;
-    height: 100%;
-    margin: auto;
-    margin-bottom: 8%;
-    padding-bottom: 5%;
-    -webkit-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    -moz-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-    .restaurant, .titre, .plat {
-    display: flex;
-    align-items: center;
-    }
-    .restaurant {
-        flex-direction: column;
-        align-items: center;
-        font-weight: lighter;
-        h2 {
-            font-weight: lighter;
-            padding: 4% 0 4% 0;
-            margin-block-end: 0;
-            text-align: center;
-        }
-    }
-    .titre {
-        align-items: center;
-        justify-content: space-between;
-        width: 90%;
-        margin: auto;
-        h3 {
-            background: linear-gradient(to top, rgba(black,0.5) 0%, rgba(black,0.5) 4px, transparent 5px) no-repeat;
-            background-size: 0% 100%;
-            transition: background-size 1000ms 700ms ease-out;
-            text-align: center;
-            &:hover {
-                background-size: 100% 100%;
-            }
-        }
-        .ligne {
-        width: 150px;
-        }
-    }
-    .plat {
-        font-size: 105%;
-        flex-direction: row;
-        line-height: 1;
+
+@media (max-width: 1109px) {
+    .container {
         width: 80%;
-        margin: auto;
-        justify-content: space-between;
-        align-items: baseline;
-        .prix {
-        font-weight: bold;
-        }
+    }
+    .prochainement {
+        margin-bottom: 10%;
     }
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: $couleur-primaire;
-    border-top: 0.5px solid $couleur-bordure-header-footer;
-    a {
-        margin-inline-start: 10px;
-        margin-inline-end: 10px;
-        text-decoration: none;
-        text-align: center;
-        color: $couleur-secondaire;
-        display: inline-block;
-        animation: wiggle 1500ms infinite;
+@media (max-width: 750px) {
+    .container {
+        width: 50%;
+    }
+    .prochainement {
+        margin-bottom: 10%;
+    }
+    .container-carte-menu-la-note-enchantee, .container-carte-menu-le-chic-a-la-francaise, .container-carte-menu-le-delice-des-papilles, .container-carte-menu-la-palette-du-gout {
+        margin: 7% 0 7% 0;
     }
 }
-@keyframes wiggle {
-    0%{transform: rotate(0deg)}
-    25%{transform: rotate(4deg)}
-    50%{transform: rotate(-4deg)}
-    100%{transform: rotate(0deg)}
-}
-
-
-/* Menu "La note enchantée" */
-
-.menu-la-note-enchantee {
-    color: #3d1319;
-    background-color: #fcdfdb;
-}
-
-.restaurant-la-note-enchantee {
-    padding-top: 5%;
-    text-align: center;
-}
-
-.restaurant-informations-la-note-enchantee {
+@font-face {
     font-family: 'devonshire';
-    margin-top: 5px;
-    font-size: 250%;
-    margin-block-end: 0;
-}
+    src: url("../fonts/devonshire/Fonts/devonshire-regular-webfont.woff") format("woff");
+    src: url("../fonts/devonshire/Fonts/devonshire-regular-webfont.woff2") format("woff2");
+  }
 
-.h3-la-note-enchantee {
-    font-family: 'comics';
-}
-
-.plat-la-note-enchantee {
-    font-family: "comics";
-}
-
-img {
-    width: 50px;
-    height: 50px;
-}
-
-#signature {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1%;
-    p {
-        font-family: 'devonshire';
-        font-size: 150%;
-        padding-left: 2%;
-    }
-}
-
-/* Menu "Le chic à la française" */
-
-.menu-le-chic-a-la-francaise {
-    background-color: #fff5fe;
-}
-
-.le-chic-a-la-francaise {
+@font-face {
     font-family: 'croissant';
-    font-size: 200%;
-    color: #c77529;
-    background: -o-linear-gradient(left, #c77529 0%, #8f5bfe 100%);
-    background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    src: url("../fonts/croissant/Fonts/croissantone-regular-webfont.woff") format("woff");
+    src: url("../fonts/croissant/Fonts/croissantone-regular-webfont.woff2") format("woff2");
 }
 
-.entrees-le-chic-a-la-francaise, .repas-le-chic-a-la-francaise, .desserts-le-chic-a-la-francaise {
-    padding-bottom: 5%;
+@font-face {
+    font-family: 'kaushan';
+    src: url("../fonts/kaushan/Fonts/kaushanscript-regular-webfont.woff") format("woff");
+    src: url("../fonts/kaushan/Fonts/kaushanscript-regular-webfont.woff2") format("woff2");
 }
 
-.h3-le-chic-a-la-francaise, .plat-le-chic-a-la-francaise {
-    font-family: 'cultura';
+@font-face {
+    font-family: 'parisienne';
+    src: url("../fonts/parisienne/parisienne-regular-webfont.woff") format("woff");
+    src: url("../fonts/parisienne/parisienne-regular-webfont.woff2") format("woff2");
 }
 
-.entrees-le-chic-a-la-francaise {
-    color: #ce782d;
+@font-face {
+    font-family: 'charissil';
+    src: url("../fonts/charissil/Fonts/charissil-b-webfont.woff") format("woff");
+    src: url("../fonts/charissil/Fonts/charissil-b-webfont.woff2") format("woff2");
 }
 
-.repas-le-chic-a-la-francaise {
-    color: #a86698;
+@font-face {
+    font-family: 'comics';
+    src: url("../fonts/comics/Fonts/typo_comics_light_demo-webfont.woff") format('woff');
+    src: url("../fonts/comics/Fonts/typo_comics_light_demo-webfont.woff2") format('woff2');
 }
 
-.desserts-le-chic-a-la-francaise {
-    color: #6b56a3;
+@font-face {
+    font-family: 'segoe';
+    src: url("../fonts/segoe/segoe.woff") format('woff');
+    src: url("../fonts/segoe/segoe.woff2") format('woff2');
 }
-
