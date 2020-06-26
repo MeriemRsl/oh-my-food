@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Menu "La note enchantée" */
 body {
   margin: 0;
 }
@@ -182,6 +181,7 @@ footer a {
   }
 }
 
+/* Menu "La note enchantée" */
 .food-la-note-enchantee {
   color: #3d1319;
   background-color: #fcdfdb;
