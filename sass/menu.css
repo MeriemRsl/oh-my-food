@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   height: 100%;
@@ -355,4 +356,344 @@ footer a {
   src: url("../fonts/segoe/segoe.woff") format("woff");
   src: url("../fonts/segoe/segoe.woff2") format("woff2");
 }
-/*# sourceMappingURL=style.css.map */
+
+/* Menu "La note enchantée" */
+.title {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 155%;
+}
+
+.food {
+  width: 650px;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 8%;
+  padding-bottom: 5%;
+  -webkit-box-shadow: 0px 0px 8px 6px #e8e8e8;
+  box-shadow: 0px 0px 8px 6px #e8e8e8;
+}
+
+.food .frensh-restaurant, .food .titre, .food .resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.food .frensh-restaurant {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: lighter;
+}
+
+.food .frensh-restaurant h2 {
+  font-weight: lighter;
+  padding: 4% 0 4% 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  text-align: center;
+}
+
+.food .titre {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.food .titre h3 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 1000ms 700ms ease-out;
+  transition: background-size 1000ms 700ms ease-out;
+  text-align: center;
+}
+
+.food .titre h3:hover {
+  background-size: 100% 100%;
+}
+
+.food .titre .ligne {
+  width: 150px;
+}
+
+.food .resto {
+  font-size: 105%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 1;
+  width: 80%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.food .resto .prix {
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #579c87;
+  border-top: 0.5px solid #a1c181;
+}
+
+footer a {
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #fdcb46;
+  display: inline-block;
+  -webkit-animation: wiggle 1500ms infinite;
+          animation: wiggle 1500ms infinite;
+}
+
+.food-la-note-enchantee {
+  color: #3d1319;
+  background-color: #fcdfdb;
+}
+
+.frensh-restaurant-la-note-enchantee {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.frensh-restaurant-name-la-note-enchantee {
+  font-family: 'devonshire';
+  margin-top: 5px;
+  font-size: 250%;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.h3-la-note-enchantee {
+  font-family: 'comics';
+}
+
+.resto-la-note-enchantee {
+  font-family: "comics";
+}
+
+img {
+  width: 100px;
+}
+
+#signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
+}
+
+#signature p {
+  font-family: 'devonshire';
+  font-size: 150%;
+  padding-left: 2%;
+}
+
+/* Menu "Le chic a la francaise" */
+.food-le-chic-a-la-francaise {
+  background-color: #fff5fe;
+}
+
+.frensh-restaurant-name-le-chic-a-la-francaise {
+  font-family: 'croissant';
+  font-size: 200%;
+  color: #c77529;
+  background: -webkit-gradient(linear, left top, right top, from(#c77529), to(#8f5bfe));
+  background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.entrees-le-chic-a-la-francaise, .plats-le-chic-a-la-francaise, .desserts-le-chic-a-la-francaise {
+  padding-bottom: 5%;
+}
+
+.h3-le-chic-a-la-francaise, .resto-le-chic-a-la-francaise {
+  font-family: 'cultura';
+}
+
+.entrees-le-chic-a-la-francaise {
+  color: #ce782d;
+}
+
+.plats-le-chic-a-la-francaise {
+  color: #a86698;
+}
+
+.desserts-le-chic-a-la-francaise {
+  color: #6b56a3;
+}
+
+/* Menu "Le delice des papilles" */
+.food-le-delice-des-papilles {
+  background-color: #fdfefd;
+}
+
+.frensh-restaurant-name-le-delice-des-papilles {
+  font-family: 'parisienne';
+  font-size: 250%;
+  color: #0431df;
+  background: -webkit-gradient(linear, left top, right top, from(#0431df), to(#0887fb));
+  background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h3-le-delice-des-papilles, .resto-le-delice-des-papilles {
+  font-family: 'comics';
+}
+
+/* Menu "La pallette du gout" */
+.food-la-palette-du-gout {
+  background-color: #fdfffd;
+}
+
+.frensh-restaurant-name-la-palette-du-gout {
+  font-family: 'kaushan';
+  font-size: 250%;
+  color: #3d9339;
+  background: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#c0fd87));
+  background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h3-la-palette-du-gout, .resto-la-palette-du-gout {
+  font-family: 'comics';
+}
+
+/* Partie responsive */
+@media (min-width: 651px) and (max-width: 750px) {
+  .food {
+    width: 550px;
+    margin-bottom: 12%;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 650px) {
+  .food {
+    width: 500px;
+    margin-bottom: 13%;
+  }
+  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 220%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 180%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 550px) {
+  .food {
+    width: 450px;
+    margin-bottom: 16%;
+  }
+  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 200%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 160%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .titre .ligne {
+    width: 100px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 520px) {
+  .food {
+    width: 400px;
+    margin-bottom: 18%;
+  }
+  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 180%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 140%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .soustitre .ligne {
+    width: 100px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+  .food {
+    width: 350px;
+    margin-bottom: 20%;
+  }
+  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 160%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 120%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .titre .ligne {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .food {
+    width: 300px;
+    margin-bottom: 23%;
+  }
+  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 140%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 100%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .titre .ligne {
+    width: 75px;
+  }
+}
+/*# sourceMappingURL=menu.css.map */
