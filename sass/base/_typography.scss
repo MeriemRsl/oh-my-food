@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'devonshire';
+  src: url('../fonts/devonshire/Fonts/devonshire-regular-webfont.woff') format('woff');
+  src: url('../fonts/devonshire/Fonts/devonshire-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'croissant';
+  src: url('../fonts/croissant/Fonts/croissantone-regular-webfont.woff') format('woff');
+  src: url('../fonts/croissant/Fonts/croissantone-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'kaushan';
+  src: url('../fonts/kaushan/Fonts/kaushanscript-regular-webfont.woff') format('woff');
+  src: url('../fonts/kaushan/Fonts/kaushanscript-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'parisienne';
+  src: url('../fonts/parisienne/parisienne-regular-webfont.woff') format('woff');
+  src: url('../fonts/parisienne/parisienne-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'charissil';
+  src: url('../fonts/charissil/Fonts/charissil-b-webfont.woff') format('woff');
+  src: url('../fonts/charissil/Fonts/charissil-b-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'comics';
+  src: url('../fonts/comics/Fonts/typo_comics_light_demo-webfont.woff') format('woff');
+  src: url('../fonts/comics/Fonts/typo_comics_light_demo-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'segoe';
+  src: url('../fonts/segoe/segoe.woff') format('woff');
+  src: url('../fonts/segoe/segoe.woff2') format('woff2');
+}
+
+a {
+  text-decoration: none;
+}
+h2 {
+  font-weight: lighter;
+  padding: 4% 0 4% 0;
+  margin-block-end: 0;
+  text-align: center;
+}
+h3 {
+  background-size: 0% 100%;
+  transition: background-size 1000ms 700ms ease-out;
+  text-align: center;
+  &:hover {
+    background-size: 100% 100%;
+  }
+}

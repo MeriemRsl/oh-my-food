@@ -1,0 +1,24 @@
+body > footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid $couleur-bordure-header-footer;
+  font-family: Helvetica;
+  background-color: $couleur-primaire;
+  color: $couleur-secondaire;
+  a {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 1%;
+    text-decoration: none;
+    text-align: center;
+    color: $couleur-secondaire;
+    display: inline-block;
+    &:hover {
+      animation: wiggle 1500ms infinite;
+    }
+  }
+}

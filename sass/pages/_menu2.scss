@@ -1,0 +1,38 @@
+/* Menu "Le chic à la française" */
+
+.food-le-chic-a-la-francaise {
+  background-color: #fff5fe;
+}
+
+.frensh-restaurant-name-le-chic-a-la-francaise {
+  font-family: 'croissant';
+  font-size: 100%;
+  color: #c77529;
+  background: -o-linear-gradient(left, #c77529 0%, #8f5bfe 100%);
+  background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.entrees-le-chic-a-la-francaise,
+.plats-le-chic-a-la-francaise,
+.desserts-le-chic-a-la-francaise {
+  padding-bottom: 5%;
+}
+
+.h3-le-chic-a-la-francaise,
+.resto-le-chic-a-la-francaise {
+  font-family: 'cultura';
+}
+
+.entrees-le-chic-a-la-francaise {
+  color: #ce782d;
+}
+
+.plats-le-chic-a-la-francaise {
+  color: #a86698;
+}
+
+.desserts-le-chic-a-la-francaise {
+  color: #6b56a3;
+}

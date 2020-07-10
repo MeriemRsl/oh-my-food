@@ -1,0 +1,24 @@
+.prochainement {
+    text-align: center;
+    margin-bottom: 8%;
+    button {
+        font-family: Helvetica;
+        font-size: 130%;
+        color: $couleur-secondaire;
+        background-color: $couleur-primaire;
+        border-radius: 5px 5px 5px 5px;
+        border: 0.5px solid #508e7c;
+        padding: 0.5% 3% 0.5% 3%;
+        #span1 {
+            animation: apparition 1500ms infinite;
+        }
+        
+        #span2 {
+            animation: apparition 1600ms infinite;
+        }
+        
+        #span3 {
+            animation: apparition 1700ms infinite;
+        }
+    }
+}
