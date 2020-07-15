@@ -49,7 +49,14 @@ h2 {
   margin-block-end: 0;
   text-align: center;
 }
+h6 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: -10px;
+ 
+}
 h3 {
+  background: linear-gradient(to top, rgba(black, 0.5) 0%, rgba(black, 0.5) 4px, transparent 5px) no-repeat;
   background-size: 0% 100%;
   transition: background-size 1000ms 700ms ease-out;
   text-align: center;
