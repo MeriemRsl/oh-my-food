@@ -1,7 +1,7 @@
 .menu {
   &--la-note-enchantee {
     background-color: #fcded9;
-    
+
     img {
       top: 32%;
       width: 100px;
@@ -15,10 +15,10 @@
     h6 {
       font-family: 'segoe';
       color: #3c1218;
-      
     }
   }
-  
+
+  // chic a la francaise
 
   &--le-chic-a-la-francaise {
     background-color: darken(#fff5fe, 1%);
@@ -37,6 +37,7 @@
       color: #c77412;
     }
   }
+  //  delice des papilles
 
   &--le-delice-des-papilles {
     background-color: darken(#f9f9f9, 1%);
@@ -54,6 +55,7 @@
       color: #0887fb;
     }
   }
+  // palette du gout
 
   &--la-palette-du-gout {
     background-color: darken(#fdfffd, 1%);
@@ -73,15 +75,16 @@
   }
 
   &__cover {
-    width: 300px;
+    width: 294px;
     height: 400px;
     text-align: center;
 
     h2 {
       margin-bottom: 20px;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
+  //  the content
 
   &__cover-contenu {
     text-align: center;
@@ -95,7 +98,7 @@
     }
   }
 }
-/* la note 
+/* Note
 */
 
 .food-la-note-enchantee {
@@ -115,7 +118,7 @@
   font-size: 150%;
   margin-block-end: 0;
 }
-
+//  signature
 #signature {
   display: flex;
   align-items: center;
@@ -127,7 +130,7 @@
     padding-left: 2%;
   }
 }
-#signature img{
+#signature img {
   width: 50px;
   height: 60;
 }
@@ -143,25 +146,25 @@
   font-family: Helvetica;
   line-height: 1.5;
   padding: 2%;
-  -webkit-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-  -moz-box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
-  box-shadow: 0px 0px 8px 6px rgba(232,232,232,1);
+  -webkit-box-shadow: 0px 0px 8px 6px rgba(232, 232, 232, 1);
+  -moz-box-shadow: 0px 0px 8px 6px rgba(232, 232, 232, 1);
+  box-shadow: 0px 0px 8px 6px rgba(232, 232, 232, 1);
 }
 
-h4{
+h4 {
   font-family: Helvetica;
   color: $couleur-primaire;
   text-align: center;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
-h5{
-  color:$couleur-secondaire;
+h5 {
+  color: $couleur-secondaire;
   text-align: left;
-  font-size: 100%;   }
+  font-size: 100%;
+}
 
-
-/* Menu "Le chic à la française" 
+/*  chic à la française
 */
 
 .food-le-chic-a-la-francaise .food-le-delice-des-papilles .food-la-palette-du-gout {
@@ -200,7 +203,7 @@ h5{
   color: #6b56a3;
 }
 
-/* le delice
+/*  delice
 */
 .frensh-restaurant-name-le-delice-des-papilles {
   font-family: 'parisienne';
@@ -212,12 +215,15 @@ h5{
   -webkit-text-fill-color: transparent;
 }
 .h3-le-delice-des-papilles,
-.resto-le-delice-des-papilles , .h3-la-palette-du-gout,
-.resto-la-palette-du-gout ,.h3-la-note-enchantee ,.resto-la-note-enchantee {
+.resto-le-delice-des-papilles,
+.h3-la-palette-du-gout,
+.resto-la-palette-du-gout,
+.h3-la-note-enchantee,
+.resto-la-note-enchantee {
   font-family: 'comics';
 }
 
-/* la plalette
+/* the palette
 */
 
 .frensh-restaurant-name-la-palette-du-gout {
@@ -229,4 +235,3 @@ h5{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-

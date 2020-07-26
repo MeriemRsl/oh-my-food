@@ -1,0 +1,164 @@
+@media (min-width: 551px) and (max-width: 650px) {
+  .food {
+    width: 500px;
+    margin-bottom: 13%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 220%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 180%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 550px) {
+  .food {
+    width: 450px;
+    margin-bottom: 16%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 200%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 160%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .titre .ligne {
+    width: 100px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 520px) {
+  .food {
+    width: 400px;
+    margin-bottom: 18%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 180%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 140%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .soustitre .ligne {
+    width: 100px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+  .food {
+    width: 350px;
+    margin-bottom: 20%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 160%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 120%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .titre .ligne {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .food {
+    width: 300px;
+    margin-bottom: 23%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 140%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 100%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .titre .ligne {
+    width: 75px;
+  }
+}
+
+/* mentions_légales
+*/
+@media (min-width: 950px) {
+  #mentions_légales {
+    margin-bottom: 8%;
+  }
+}
+
+@media (max-width: 850px) {
+  #mentions_légales {
+    margin-bottom: 11%;
+  }
+}
+
+@media (max-width: 750px) {
+  #mentions_légales {
+    width: 550px;
+    margin-bottom: 14%;
+  }
+}
+
+@media (max-width: 650px) {
+  #mentions_légales {
+    width: 450px;
+    margin-bottom: 17%;
+  }
+}
+
+@media (max-width: 550px) {
+  #mentions_légales {
+    width: 350px;
+    margin-bottom: 20%;
+  }
+}
+
+@media (max-width: 450px) {
+  #mentions_légales {
+    margin-bottom: 23%;
+  }
+  h2 {
+    font-size: 130%;
+  }
+  h3 {
+    font-size: 100%;
+  }
+  p {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 380px) {
+  #mentions_légales {
+    width: 290px;
+    margin-bottom: 26%;
+  }
+  h4 {
+    font-size: 110%;
+  }
+  h5 {
+    font-size: 85%;
+  }
+  p {
+    font-size: 80%;
+  }
+}

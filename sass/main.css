@@ -1,18 +1,24 @@
 @charset "UTF-8";
-@-webkit-keyframes apparition {
+@-webkit-keyframes blink {
   0% {
-    opacity: 0;
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0.2;
   }
 }
-@keyframes apparition {
+@keyframes blink {
   0% {
-    opacity: 0;
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0.2;
   }
 }
 
@@ -122,8 +128,8 @@ h6 {
 h3 {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 4px, transparent 5px) no-repeat;
   background-size: 0% 100%;
-  -webkit-transition: background-size 1000ms 700ms ease-out;
-  transition: background-size 1000ms 700ms ease-out;
+  -webkit-transition: background-size 1000ms;
+  transition: background-size 1000ms;
   text-align: center;
 }
 
@@ -150,24 +156,6 @@ header h1 a {
   color: #fdcb46;
 }
 
-header,
-footer {
-  font-family: Helvetica;
-  background-color: #579c87;
-  color: #fdcb46;
-}
-
-header h1 {
-  text-align: center;
-  margin: 0;
-  padding: 2% 0 2% 0;
-  border-bottom: 0.5px solid #a1c181;
-}
-
-header h1 a {
-  text-decoration: none;
-}
-
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,6 +175,7 @@ body > footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +192,7 @@ body > footer a {
   margin-left: 10px;
   margin-right: 10px;
   margin: 1%;
-  font-size: 19px;
+  font-size: 21px;
   text-decoration: none;
   text-align: center;
   color: #fdcb46;
@@ -323,23 +312,30 @@ body > footer a:hover {
   color: #fdcb46;
   background-color: #579c87;
   border-radius: 5px 5px 5px 5px;
-  border: 0.5px solid #508e7c;
+  border: 0.5px solid #579c87;
   padding: 0.5% 3% 0.5% 3%;
 }
 
-.prochainement button #span1 {
-  -webkit-animation: apparition 1305ms infinite;
-          animation: apparition 1305ms infinite;
+.prochainement .dots span {
+  font-size: 40px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-.prochainement button #span2 {
-  -webkit-animation: apparition 1400ms infinite;
-          animation: apparition 1400ms infinite;
+.prochainement .dots span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
-.prochainement button #span3 {
-  -webkit-animation: apparition 1500ms infinite;
-          animation: apparition 1500ms infinite;
+.prochainement .dots span:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .menu--la-note-enchantee {
@@ -418,14 +414,14 @@ body > footer a:hover {
 }
 
 .menu__cover {
-  width: 300px;
+  width: 294px;
   height: 400px;
   text-align: center;
 }
 
 .menu__cover h2 {
   margin-bottom: 20px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .menu__cover-contenu {
@@ -447,7 +443,7 @@ body > footer a:hover {
   opacity: 0.5;
 }
 
-/* la note 
+/* Note
 */
 .food-la-note-enchantee {
   color: #3d1319;
@@ -520,7 +516,7 @@ h5 {
   font-size: 100%;
 }
 
-/* Menu "Le chic à la française" 
+/*  chic à la française
 */
 .food-le-chic-a-la-francaise .food-le-delice-des-papilles .food-la-palette-du-gout {
   background-color: #fff5fe;
@@ -558,7 +554,7 @@ h5 {
   color: #6b56a3;
 }
 
-/* le delice
+/*  delice
 */
 .frensh-restaurant-name-le-delice-des-papilles {
   font-family: 'parisienne';
@@ -571,12 +567,15 @@ h5 {
 }
 
 .h3-le-delice-des-papilles,
-.resto-le-delice-des-papilles, .h3-la-palette-du-gout,
-.resto-la-palette-du-gout, .h3-la-note-enchantee, .resto-la-note-enchantee {
+.resto-le-delice-des-papilles,
+.h3-la-palette-du-gout,
+.resto-la-palette-du-gout,
+.h3-la-note-enchantee,
+.resto-la-note-enchantee {
   font-family: 'comics';
 }
 
-/* la plalette
+/* the palette
 */
 .frensh-restaurant-name-la-palette-du-gout {
   font-family: 'kaushan';
@@ -593,7 +592,9 @@ h5 {
     width: 500px;
     margin-bottom: 13%;
   }
-  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
     font-size: 220%;
   }
   .frensh-restaurant-name-le-chic-a-la-francaise {
@@ -606,7 +607,9 @@ h5 {
     width: 450px;
     margin-bottom: 16%;
   }
-  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
     font-size: 200%;
   }
   .frensh-restaurant-name-le-chic-a-la-francaise {
@@ -625,7 +628,9 @@ h5 {
     width: 400px;
     margin-bottom: 18%;
   }
-  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
     font-size: 180%;
   }
   .frensh-restaurant-name-le-chic-a-la-francaise {
@@ -644,7 +649,9 @@ h5 {
     width: 350px;
     margin-bottom: 20%;
   }
-  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
     font-size: 160%;
   }
   .frensh-restaurant-name-le-chic-a-la-francaise {
@@ -663,7 +670,9 @@ h5 {
     width: 300px;
     margin-bottom: 23%;
   }
-  .frensh-restaurant-name-la-note-enchantee, .frensh-restaurant-name-le-delice-des-papilles, .frensh-restaurant-name-la-palette-du-gout {
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
     font-size: 140%;
   }
   .frensh-restaurant-name-le-chic-a-la-francaise {
@@ -729,7 +738,7 @@ h5 {
 
 @media (max-width: 380px) {
   #mentions_légales {
-    width: 300px;
+    width: 290px;
     margin-bottom: 26%;
   }
   h4 {

@@ -17,22 +17,3 @@ header {
     }
   }
 }
-
-header,
-footer {
-  font-family: Helvetica;
-  background-color: $couleur-primaire;
-  color: $couleur-secondaire;
-}
-
-header {
-  h1 {
-    text-align: center;
-    margin: 0;
-    padding: 2% 0 2% 0;
-    border-bottom: 0.5px solid $couleur-bordure-header-footer;
-    a {
-      text-decoration: none;
-    }
-  }
-}
