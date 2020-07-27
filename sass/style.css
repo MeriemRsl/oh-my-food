@@ -60,9 +60,197 @@
   }
 }
 
+@media (min-width: 551px) and (max-width: 650px) {
+  .food {
+    width: 500px;
+    margin-bottom: 13%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 220%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 180%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 550px) {
+  .food {
+    width: 450px;
+    margin-bottom: 16%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 200%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 160%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .titre .ligne {
+    width: 100px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 520px) {
+  .food {
+    width: 400px;
+    margin-bottom: 18%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 180%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 140%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .soustitre .ligne {
+    width: 100px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 450px) {
+  .food {
+    width: 350px;
+    margin-bottom: 20%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 160%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 120%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .titre .ligne {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .food {
+    width: 300px;
+    margin-bottom: 23%;
+  }
+  .frensh-restaurant-name-la-note-enchantee,
+  .frensh-restaurant-name-le-delice-des-papilles,
+  .frensh-restaurant-name-la-palette-du-gout {
+    font-size: 140%;
+  }
+  .frensh-restaurant-name-le-chic-a-la-francaise {
+    font-style: 100%;
+  }
+  .prix {
+    padding-left: 2%;
+  }
+  .food .titre .ligne {
+    width: 75px;
+  }
+}
+
+/* mentions_légales
+*/
+@media (min-width: 950px) {
+  #mentions_légales {
+    margin-bottom: 8%;
+  }
+}
+
+@media (max-width: 850px) {
+  #mentions_légales {
+    margin-bottom: 11%;
+  }
+}
+
+@media (max-width: 750px) {
+  #mentions_légales {
+    width: 550px;
+    margin-bottom: 14%;
+  }
+}
+
+@media (max-width: 650px) {
+  #mentions_légales {
+    width: 450px;
+    margin-bottom: 17%;
+  }
+}
+
+@media (max-width: 550px) {
+  #mentions_légales {
+    width: 350px;
+    margin-bottom: 20%;
+  }
+}
+
+@media (max-width: 450px) {
+  #mentions_légales {
+    margin-bottom: 23%;
+  }
+  h2 {
+    font-size: 130%;
+  }
+  h3 {
+    font-size: 100%;
+  }
+  p {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 380px) {
+  #mentions_légales {
+    width: 290px;
+    margin-bottom: 26%;
+  }
+  h4 {
+    font-size: 110%;
+  }
+  h5 {
+    font-size: 85%;
+  }
+  p {
+    font-size: 80%;
+  }
+}
+
 body {
   margin: 0;
   height: 100%;
+}
+
+.carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-bottom: 3%;
+  min-height: 450px;
+  -webkit-box-shadow: 0 0 6px #ccc;
+          box-shadow: 0 0 6px #ccc;
+  font-size: 150%;
 }
 
 @font-face {
@@ -123,18 +311,6 @@ h6 {
   text-align: center;
   font-size: 25px;
   margin-top: -10px;
-}
-
-h3 {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 4px, transparent 5px) no-repeat;
-  background-size: 0% 100%;
-  -webkit-transition: background-size 1000ms;
-  transition: background-size 1000ms;
-  text-align: center;
-}
-
-h3:hover {
-  background-size: 100% 100%;
 }
 
 body > header {
@@ -204,27 +380,41 @@ body > footer a:hover {
           animation: wiggle 1500ms infinite;
 }
 
-.carte {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  align-items: center;
-  padding: 2%;
-  margin-bottom: 3%;
-  min-height: 450px;
-  -webkit-box-shadow: 0 0 6px #ccc;
-          box-shadow: 0 0 6px #ccc;
-  font-size: 150%;
+.prochainement {
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.prochainement button {
+  font-family: Helvetica;
+  font-size: 180%;
+  color: #fdcb46;
+  background-color: #579c87;
+  border-radius: 5px 5px 5px 5px;
+  border: 0.5px solid #579c87;
+  padding: 0.5% 3% 0.5% 3%;
+}
+
+.prochainement .dots span {
+  font-size: 40px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.prochainement .dots span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.prochainement .dots span:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .title {
@@ -299,43 +489,6 @@ body > footer a:hover {
 
 .food .resto .prix {
   font-weight: bold;
-}
-
-.prochainement {
-  text-align: center;
-  margin-bottom: 8%;
-}
-
-.prochainement button {
-  font-family: Helvetica;
-  font-size: 180%;
-  color: #fdcb46;
-  background-color: #579c87;
-  border-radius: 5px 5px 5px 5px;
-  border: 0.5px solid #579c87;
-  padding: 0.5% 3% 0.5% 3%;
-}
-
-.prochainement .dots span {
-  font-size: 40px;
-  -webkit-animation-name: blink;
-          animation-name: blink;
-  -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.prochainement .dots span:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.prochainement .dots span:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
 }
 
 .menu--la-note-enchantee {
@@ -587,168 +740,16 @@ h5 {
   -webkit-text-fill-color: transparent;
 }
 
-@media (min-width: 551px) and (max-width: 650px) {
-  .food {
-    width: 500px;
-    margin-bottom: 13%;
-  }
-  .frensh-restaurant-name-la-note-enchantee,
-  .frensh-restaurant-name-le-delice-des-papilles,
-  .frensh-restaurant-name-la-palette-du-gout {
-    font-size: 220%;
-  }
-  .frensh-restaurant-name-le-chic-a-la-francaise {
-    font-style: 180%;
-  }
+/* soulignement */
+h3 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 4px, transparent 5px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 1000ms;
+  transition: background-size 1000ms;
+  text-align: center;
 }
 
-@media (min-width: 521px) and (max-width: 550px) {
-  .food {
-    width: 450px;
-    margin-bottom: 16%;
-  }
-  .frensh-restaurant-name-la-note-enchantee,
-  .frensh-restaurant-name-le-delice-des-papilles,
-  .frensh-restaurant-name-la-palette-du-gout {
-    font-size: 200%;
-  }
-  .frensh-restaurant-name-le-chic-a-la-francaise {
-    font-style: 160%;
-  }
-  .prix {
-    padding-left: 2%;
-  }
-  .food .titre .ligne {
-    width: 100px;
-  }
+h3:hover {
+  background-size: 100% 100%;
 }
-
-@media (min-width: 451px) and (max-width: 520px) {
-  .food {
-    width: 400px;
-    margin-bottom: 18%;
-  }
-  .frensh-restaurant-name-la-note-enchantee,
-  .frensh-restaurant-name-le-delice-des-papilles,
-  .frensh-restaurant-name-la-palette-du-gout {
-    font-size: 180%;
-  }
-  .frensh-restaurant-name-le-chic-a-la-francaise {
-    font-style: 140%;
-  }
-  .prix {
-    padding-left: 2%;
-  }
-  .food .soustitre .ligne {
-    width: 100px;
-  }
-}
-
-@media (min-width: 401px) and (max-width: 450px) {
-  .food {
-    width: 350px;
-    margin-bottom: 20%;
-  }
-  .frensh-restaurant-name-la-note-enchantee,
-  .frensh-restaurant-name-le-delice-des-papilles,
-  .frensh-restaurant-name-la-palette-du-gout {
-    font-size: 160%;
-  }
-  .frensh-restaurant-name-le-chic-a-la-francaise {
-    font-style: 120%;
-  }
-  .prix {
-    padding-left: 2%;
-  }
-  .food .titre .ligne {
-    width: 100px;
-  }
-}
-
-@media (max-width: 400px) {
-  .food {
-    width: 300px;
-    margin-bottom: 23%;
-  }
-  .frensh-restaurant-name-la-note-enchantee,
-  .frensh-restaurant-name-le-delice-des-papilles,
-  .frensh-restaurant-name-la-palette-du-gout {
-    font-size: 140%;
-  }
-  .frensh-restaurant-name-le-chic-a-la-francaise {
-    font-style: 100%;
-  }
-  .prix {
-    padding-left: 2%;
-  }
-  .food .titre .ligne {
-    width: 75px;
-  }
-}
-
-/* mentions_légales
-*/
-@media (min-width: 950px) {
-  #mentions_légales {
-    margin-bottom: 8%;
-  }
-}
-
-@media (max-width: 850px) {
-  #mentions_légales {
-    margin-bottom: 11%;
-  }
-}
-
-@media (max-width: 750px) {
-  #mentions_légales {
-    width: 550px;
-    margin-bottom: 14%;
-  }
-}
-
-@media (max-width: 650px) {
-  #mentions_légales {
-    width: 450px;
-    margin-bottom: 17%;
-  }
-}
-
-@media (max-width: 550px) {
-  #mentions_légales {
-    width: 350px;
-    margin-bottom: 20%;
-  }
-}
-
-@media (max-width: 450px) {
-  #mentions_légales {
-    margin-bottom: 23%;
-  }
-  h2 {
-    font-size: 130%;
-  }
-  h3 {
-    font-size: 100%;
-  }
-  p {
-    font-size: 90%;
-  }
-}
-
-@media (max-width: 380px) {
-  #mentions_légales {
-    width: 290px;
-    margin-bottom: 26%;
-  }
-  h4 {
-    font-size: 110%;
-  }
-  h5 {
-    font-size: 85%;
-  }
-  p {
-    font-size: 80%;
-  }
-}
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
